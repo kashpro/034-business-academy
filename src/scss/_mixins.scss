@@ -1,0 +1,20 @@
+@mixin fcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin size($x, $y:$x) {
+  width: $x * 1px;
+  height: $y * 1px;
+};
+
+
+$desktop-tablet-divider: 1280px;
+@mixin hover {
+  &:hover {
+    @media (min-width: $desktop-tablet-divider) {
+      @content;
+    }
+  }
+}
