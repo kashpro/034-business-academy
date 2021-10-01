@@ -13,17 +13,12 @@
 /*blocks*/
 // Даже внутри подпапок ссылка на ассеты будет выглядеть так: url("../assets/images/3.png"); (без дополнительного выхода наверх из подпапки)
 
-@import "./blocks/_preloader.scss";
+@import "./blocks/_btn.scss";
 
-html {
-  user-select: none; //autoprefixer check
-}
-
-.test {
-  $this: &;
-  @include hover {
-    #{$this}__test2 {
-      color: blue;
-    }
-  }
-}
+@import "./blocks/header.scss";
+@import "./blocks/title.scss";
+@import "./blocks/aspects.scss";
+@import "./blocks/features.scss";
+@import "./blocks/faq.scss";
+@import "./blocks/video.scss";
+@import "./blocks/footer.scss";

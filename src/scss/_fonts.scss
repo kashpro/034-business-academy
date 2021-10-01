@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Yandex Sans Text';
+  src: local('Yandex Sans Text Regular'), local('YandexSansText-Regular'),
+      url('../assets/fonts/YandexSansText-Regular.woff2') format('woff2');
   font-weight: 400;
-  src: local('Roboto'), local('Roboto'),
-       url('../assets/fonts/Roboto.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
 }
 
-/* roboto-100 - latin Full Example */
-// @font-face {
-//   font-family: 'Roboto';
-//   font-style: normal;
-//   font-weight: 100;
-//   src: local('Roboto Thin'), local('Roboto-Thin'),
-//        url('../fonts/roboto-v19-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-//        url('../fonts/roboto-v19-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-// }
+@font-face {
+  font-family: 'Yandex Sans Text';
+  src: local('Yandex Sans Text Bold'), local('YandexSansText-Bold'),
+      url('../assets/fonts/YandexSansText-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 /*
 font-face generator:

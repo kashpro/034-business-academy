@@ -1,0 +1,43 @@
+.video {
+  padding-top: 55px;
+  padding-bottom: 50px;
+  @media (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__head {
+    font-size: 26px;
+    margin-bottom: 38px;
+    @media (max-width: 991px) {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  &__box {
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height: 0;
+    // background-color: $temp2;
+    // width: 1063px;
+    // height: 548px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    iframe, object, embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
