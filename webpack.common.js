@@ -9,7 +9,8 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
-const filename = (ext = '[ext]') => isDev ? `[name]${ext}` : `[name].[contenthash]${ext}`;
+// const filename = (ext = '[ext]') => isDev ? `[name]${ext}` : `[name].[contenthash]${ext}`;
+const filename = (ext = '[ext]') => isDev ? `[name]${ext}` : `[name]${ext}`;
 
 const findHtmlTemplates = () => {
   const htmlFiles = glob.sync(__dirname + '/src/**/*.html');
